@@ -1,12 +1,19 @@
 import React from "react";
-import Navbar from "./navbar/Navbar";
-import Sidebar from "./navbar/Sidebar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
+import { Navbar } from "./components";
+import "./App.scss";
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
-      <Sidebar />
-    </>
+      <Header />
+      <About />
+      <Work />
+      <Skills />
+      <Testimonial />
+      <Footer />
+    </div>
   );
 }
 
